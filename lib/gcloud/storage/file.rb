@@ -700,7 +700,7 @@ module Gcloud
         ##
         # The external path to the file.
         def ext_path
-          "/#{@file.bucket}/#{@file.name}"
+          URI.escape "/#{@file.bucket}/#{@file.name}"
         end
 
         ##
